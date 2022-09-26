@@ -25,6 +25,26 @@ then you will see the two types of result interface below
 
 ![Screenshot 2022-09-26 014334](https://user-images.githubusercontent.com/104298270/192271941-d83627f2-cc65-464d-8042-860a214ecbbb.png)
 
+#Step-4 
+For checking Diabetes Prediction you have to go back home page and click the button Start Diabetes Prediction then you will see the 
+Diabetes Prediction System as a form.
+
+![Screenshot 2022-09-26 014503](https://user-images.githubusercontent.com/104298270/192272694-6132b06f-f480-41a9-adad-e22c792390a4.png)
+
+#Step-5
+After reach the Diabetes Perdiction System you have to just enter the values,quantity according to the form 
+then you will see the two types of result interface below.
+
+![Screenshot 2022-09-26 014658](https://user-images.githubusercontent.com/104298270/192272907-45e8203f-22ed-4c4b-a4ae-5be707912a59.png)
+
+![Screenshot 2022-09-26 014917](https://user-images.githubusercontent.com/104298270/192272926-ad59d3ad-362c-485f-a36a-272e7686008f.png)
+
+# Thanks For visiting my Github Profile.
+
+
+
+
+
 
 
 
