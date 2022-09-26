@@ -1,0 +1,301 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Lato:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    opacity: 12.16;
+}
+.contact {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    padding: 30px 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url(https://i.ibb.co/Lvh98c4/pexels-sebastiaan-stam-1097456.jpg)
+    
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h1 {
+  font-weight: 500;
+    color: #fff;
+}
+.contact .content p {
+    font-weight: 500;
+    color: #fff;
+    font-size: 22px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container .contactInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -90px;
+    margin-left: 170px;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    margin-top: 20px;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    font-weight: 900;
+
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 800;
+    color: #ffffff;
+     
+}
+
+.contactform {
+    width: 40%;
+    padding: 35px;
+    /* background: #fff; */
+    box-shadow: 12px -13px 15px rgb(136, 131, 131);
+    border: 3px groove;
+    border-bottom-left-radius: 20px;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 7px 0;
+    /* background-color: rgb(187, 177, 177); */
+    background: transparent;
+    font-size: 20px;
+    margin: 10px 0;
+    border: none;
+    color: white;
+    outline: none;
+    resize: none;
+    border: 2px double rgb(255, 255, 255);
+    border-bottom-right-radius: 12px;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding-block-end: 5px 0;
+    margin: 10px 0;
+    pointer-events: none;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 20px;
+    transform: 0.5s;
+    color:rgb(255, 255, 255);
+}
+
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span,
+.contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transform: translateY(-33px);
+
+}
+
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+  border-radius: 10px;
+}
+
+@media (max-width:991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .container .contactInfo {
+        width: 100%;
+    }
+
+}
+.tunch {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+.null {
+    display: inline-block;
+}
+
+.icon2 {
+    display: inline-block;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon2 ul li {
+    font-size: 35px;
+   margin: 13px 0;
+   margin-right: 65px;
+    padding: 14px 3px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.tt{
+    color: white;
+}
+
+</style>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1> <br>
+            <p>Hello , folks ! Sourabh is here , if you want konw something related
+                with this website then here you just fill the details then hope you will
+                get answers. Thankyou.
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Vellore Institute Of Technology University <br>Bhopal , Kothri kalan Sehore 466114</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="bi bi-telephone-fill"></i></div>
+                    <div class="text">
+                        <h3>Contact Number</h3>
+                        <p>+918752364980</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="bi bi-envelope-open-fill"></i></div>
+                    <div class="text">
+                        <h3>Email Id</h3>
+                        <p>eg- Anuj.pam100@gamil.com</p>
+                    </div>
+                </div>
+                <div class="tunch">
+                    <div class="null">
+                        <div class="icon2">
+                            <ul class="tt">
+                                <li><i class="bi bi-github"></i></li>
+                                <li><i class="bi bi-twitter"></i></li>
+                                <li><i class="bi bi-medium"></i></li>
+                                <li><i class="bi bi-linkedin"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form action="">
+                    <h2>Drop Message here !</h2> <br>
+                    <div class="inputbox">
+                        <input type="text" name="" id="" required="required">
+                        <span>Full Name </span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" id="" required="required">
+                        <span>Email </span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="" id="" cols="20" rows="5" required="required"></textarea>
+                        <span>Type your Query </span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="Send" name="" id="btn">
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>

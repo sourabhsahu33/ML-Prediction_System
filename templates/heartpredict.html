@@ -1,0 +1,233 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF=8">
+    <title>Heart Disease Prediction </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+         {% comment %} background-image: url(https://i.ibb.co/n82j2fv/shutterstock-407554567.webp); {% endcomment %}
+            background-size: cover;
+          background-image:url(https://i.ibb.co/Z62XJFx/uuuu.jpg)
+        }
+
+        p { letter-spacing:4px;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        .main {
+            position: absolute;
+            top: 75px;
+            left: 470px;
+            height: 84.5vh;
+            box-shadow: -10px 5px 10px rgb(240, 238, 238);
+            width: 39%;
+            background-color:white;
+            {% comment %} background-color: rgb(255, 250, 185); {% endcomment %}
+            border-radius: 15px;
+            border: 3px solid black;
+        }
+
+        .main h1 {
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 8px;
+            color: rgb(0, 0, 0);
+           
+
+        }
+
+        table {margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table,
+        tr {
+            margin: 6px 0;
+        }
+
+        td {
+            padding: 7px 32px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        td input {
+            width: 230px;
+            height: 20px;
+            padding: 0 12px;
+            font-size: 13px;
+            border: 2px solid black;
+            /* border-bottom-right-radius: 9px; */
+            {% comment %} border-radius: 7px; {% endcomment %}
+        }
+
+        .id {
+            padding: 0 -10px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type=submit] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fe5c3c;
+            border: 2px solid black;
+            color: white;
+            padding: 7px 13px;
+            cursor: pointer;
+            margin-top: 7px;
+            border-radius: 10px;
+            width: 130px;
+            height: 40px;
+            font-size: 18px;
+        }
+
+        .btn input:hover {
+            background-color: rgb(10, 10, 10);
+        }
+
+        .active {
+            display: block;
+            animation: appear 1s ease-in-out ;
+            transform: translateY(0) scaleY(1);
+        }
+        @keyframes appear {
+                0% {
+                    transform: translateY(-100%) scaleY(0);
+                }
+
+                100% {
+                    transform: translateY(0) scaleY(1);
+                }
+            }
+            .img{
+                position: absolute;
+                top: 89px;
+           right: 10px;
+                width: 470px;
+                height: 650px;
+                display: block;
+                background: transparent;
+            }
+            .img img{
+                background: transparent;
+            }
+            .himg{
+                position: absolute;
+                top: 30px;
+           left: 20px;
+               
+                display: block;
+                background: transparent;
+            }
+            .himg img{
+                background: transparent;
+                width: 320px;
+                height: 400px;
+            }
+            .row{
+                color: red;
+                margin:5px auto;
+                text-align:center;
+            }
+
+    </style>
+</head>
+
+<body>
+    <div class="active">
+       
+        <b>
+            <p>WELCOME TO THE HEART PREDICTION !</P>
+        </b>
+        <div class="main">
+            <h1>It's just a prediction, do consult with a Doctor 🤔</h1> 
+            <form  action="result">
+                <table>
+                    <tr>
+                        <td align="right">Age :</td>
+                        <td align="left"><input type="text" placeholder="Enter Your Age" name="n1"></td> 
+                    </tr>
+                    <tr>
+                        <td align="right">Sex :</td>
+                        <td align="left"><input type="text" placeholder="Enter Value 0/1" name="n2"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Chest Pain(CP) :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Value" name="n3"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Trestbs :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Quantity" name="n4"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Cholestoral :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Quantity" name="n5"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">FBS :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Quantity" name="n6"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Restecg :</td>
+                        <td align="left"><input type="text" placeholder="Enter Value eg. 0/1/2" name="n7"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Thalach :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Value" name="n8"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Exang :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Value" name="n9"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Oldpeak :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Value" name="n10"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Slope :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Value" name="n11"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">C.A. :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Value" name="n12"></td>
+                    </tr>  
+                    <tr>
+                        <td align="right">Thal :</td>
+                        <td align="left"><input type="text" placeholder="Enter the Value" name="n13"></td>
+                    </tr> 
+                    
+                </table>
+               
+                <div  class="btn">
+                    <input  type="submit" value="PREDICT"></div>
+              </form> 
+         <div class="row">
+                <h2>{{result2}}</h2>
+            </div> 
+        
+            </div> <img class="img" src="https://i.ibb.co/4mHCfGr/home-1.png" alt=""> 
+           
+    </div>
+</body>
+
+</html>

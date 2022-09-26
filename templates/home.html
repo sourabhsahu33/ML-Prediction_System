@@ -1,0 +1,287 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project-ML DiabetesPrediction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <style type=text/css>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .active {
+            animation: pol 1.5s ease-in-out;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            height: 13vh;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav {
+            padding-right: 50px;
+        }
+
+        nav ul a {
+            color: white;
+            padding: 0 30px;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            color: white;
+            font-family: Times New Roman, sans-serif;
+            font-size: 47px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        h2 :hover {
+            background-color: lightcoral;
+        }
+
+        body {
+            background-image:url(https://i.ibb.co/ZzRZ0JJ/ssssss.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img img {
+            animation: num 3s ease-in-out;
+            position: absolute;
+            top: -91px;
+            left: -55px;
+            width: 470px;
+            height: 456px;
+        }
+
+        @keyframes pol {
+            0% {
+                transform: translateY(-100%) scaleY(0);
+            }
+
+            100% {
+                transform: translateY(0) scaleY(1);
+            }
+        }
+
+        @keyframes num {
+            0% {
+                transform: translateY(-100%) scaleY(0);
+            }
+
+            100% {
+                transform: translateY(0) scaleY(1);
+            }
+        }
+
+        a:hover {
+            color: rgb(4, 255, 255);
+        }
+
+        .box1 {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 280px;
+            right: 850px;
+            border: 3px solid black;
+            border-radius: 13px;
+            box-shadow: 12px -12px 9px rgb(219, 219, 219);
+            width: 300px;
+            height: 300px;
+            background-image: url(https://i.ibb.co/5RwpFxj/ggg.jpg);
+            background-size: cover;
+        }
+
+        b {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #zamp {
+            background: transparent; 
+        }
+
+        .box1 input {
+            text-decoration: none;
+            font-size: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        color:black;
+        }
+
+        #zamp1 {
+            background: transparent;
+        }
+
+        .box input {
+            text-decoration: none;
+            font-size: 27px;
+            cursor: pointer;  
+            font-weight: bold;
+            color:black;
+            
+        }
+
+        .box {
+            cursor: pointer;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 280px;
+            right: 480px;
+            border: 3px solid black;
+            border-radius: 13px;
+            box-shadow: 12px -12px 9px rgb(219, 219, 219);
+            width: 300px;
+            height: 300px;
+           background-image:url(https://i.ibb.co/B40dCLP/istockphoto-1341677509-170667a.jpg);
+            background-size: cover;
+
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            color: white;
+            height: 18vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 21px;
+        }
+
+        .tunch {
+            display: inline-block;
+            text-align: center;
+            align-items: center;
+        }
+
+        .null {
+            display: inline-block;
+        }
+
+        .icon2 {
+            display: inline-block;
+            font-size: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon2 ul li {
+            font-size: 35px;
+            margin: 10px auto 0;
+            padding: 14px 23px;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .tt {
+            color: rgb(207, 211, 212);
+
+        }
+
+        .dd {
+            color: rgb(222, 216, 255);
+        }
+
+        .cc {
+            color: rgb(255, 255, 255);
+        }
+
+        .ee {
+            color: rgb(213, 227, 242);
+        }
+
+        .ff {
+            color: rgb(255, 223, 223);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="active">
+        <header>
+            <nav>
+                <ul>
+                    <b>
+                        <form action="prevent">
+                            <a href="#">Home</a>
+                            <a href="#">About </a>
+                            <a href="prevent"> Prevention </a>
+                       </form> 
+
+                       <form action="contact"> <a href="contact">Contact</a>
+                       </form>
+                        
+                    </b>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="img">
+            <img src="https://i.ibb.co/ns9XZfz/medic-cross-sign-hospital-logo-vector-5241622-removebg-preview.png"
+                alt="">
+        </div>
+        <div style="text-align: center;">
+
+            <h2>
+                Welcome to The Prediction System !
+            </h2>
+            <form action="predict">
+                <div class="box1">
+                    <b>
+                        <input type="submit" value=" Start Diabetes Prediction" name="" id="zamp">
+                    </b>
+                </div>
+            </form>
+            <form action="heartpredict">
+                <div class="box">
+                    <b>
+                        <input type="submit" value=" Start Heart Prediction" name="" id="zamp1">
+                    </b>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="tunch">
+            <div class="null">
+                <div class="icon2">
+                    <ul>
+                        <li class="tt"><i class="bi bi-facebook"></i></li>
+                        <li class="ff"><i class="bi bi-medium"></i></li>
+                        <li class="cc"><i class="bi bi-github"></i></li>
+                        <li class="dd"><i class="bi bi-twitter"></i></li>
+                        <li class="ee"><i class="bi bi-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div> <br>
+            <div class="text">Copyright &copy; Sourabh All rights reserved</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
