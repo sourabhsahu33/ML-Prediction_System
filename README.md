@@ -39,7 +39,7 @@ then you will see the two types of result interface below.
 
 ![Screenshot 2022-09-26 014917](https://user-images.githubusercontent.com/104298270/192272926-ad59d3ad-362c-485f-a36a-272e7686008f.png)
 
-# Thanks For visiting my Github Profile.
+<h1 align="center">Thanks For visiting my Github Profile.</h1>
 
 
 
